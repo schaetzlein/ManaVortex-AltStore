@@ -25,7 +25,16 @@
           "NSCameraUsageDescription": "Used to scan Magic: The Gathering cards for collection tracking"
         }
       },
-      "versions": []
+      "versions": [
+        {
+          "version": "0.8.32",
+          "buildVersion": "83",
+          "date": "2026-05-20T07:06:13Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.8.32/ManaVortex.ipa",
+          "size": 28735620,
+          "minOSVersion": "15.5"
+        }
+      ]
     }
   ],
   "news": []
