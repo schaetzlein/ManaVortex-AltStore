@@ -1,13 +1,11 @@
 {
   "name": "ManaVortex",
+  "identifier": "io.manavortex.altstore-source",
   "subtitle": "Commander game tracker for Magic: The Gathering",
   "description": "Local-first, offline Commander life tracker. Track life totals, commander damage, poison counters, and game history — no account, no internet required.",
   "iconURL": "https://raw.githubusercontent.com/schaetzlein/ManaVortex-AltStore/main/icon.png",
   "website": "https://github.com/schaetzlein/ManaVortex-AltStore",
   "tintColor": "#FF5252",
-  "featuredApps": [
-    "io.manavortex.app"
-  ],
   "apps": [
     {
       "name": "ManaVortex",
@@ -16,19 +14,17 @@
       "subtitle": "Commander game tracker for Magic: The Gathering",
       "localizedDescription": "Track your Magic: The Gathering Commander games locally. Log life totals, commander damage, poison counters, monarch, and more. Full game history with statistics — no account or internet connection required.",
       "iconURL": "https://raw.githubusercontent.com/schaetzlein/ManaVortex-AltStore/main/icon.png",
-      "category": "games",
       "tintColor": "#FF5252",
       "screenshots": [],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSCameraUsageDescription": "Used to scan Magic: The Gathering cards for collection tracking"
+      "permissions": [
+        {
+          "type": "camera",
+          "usageDescription": "Used to scan Magic: The Gathering cards for collection tracking"
         }
-      },
+      ],
       "versions": [
         {
           "version": "0.8.32",
-          "buildVersion": "83",
           "date": "2026-05-20T07:06:13Z",
           "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.8.32/ManaVortex.ipa",
           "size": 28735620,
