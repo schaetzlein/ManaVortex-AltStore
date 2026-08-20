@@ -2,7 +2,7 @@
   "name": "ManaVortex",
   "identifier": "io.manavortex.altstore-source",
   "subtitle": "Commander game tracker for Magic: The Gathering",
-  "description": "Local-first, offline Commander life tracker. Track life totals, commander damage, poison counters, and game history — no account, no internet required.",
+  "description": "Local-first, offline Commander life tracker. Track life totals, commander damage, poison counters, and game history \u2014 no account, no internet required.",
   "iconURL": "https://raw.githubusercontent.com/schaetzlein/ManaVortex-AltStore/main/icon.png",
   "website": "https://github.com/schaetzlein/ManaVortex-AltStore",
   "tintColor": "#FF5252",
@@ -10,9 +10,9 @@
     {
       "name": "ManaVortex",
       "bundleIdentifier": "io.manavortex.app",
-      "developerName": "Lukas Schätzlein",
+      "developerName": "Lukas Sch\u00e4tzlein",
       "subtitle": "Commander game tracker for Magic: The Gathering",
-      "localizedDescription": "Track your Magic: The Gathering Commander games locally. Log life totals, commander damage, poison counters, monarch, and more. Full game history with statistics — no account or internet connection required.",
+      "localizedDescription": "Track your Magic: The Gathering Commander games locally. Log life totals, commander damage, poison counters, monarch, and more. Full game history with statistics \u2014 no account or internet connection required.",
       "iconURL": "https://raw.githubusercontent.com/schaetzlein/ManaVortex-AltStore/main/icon.png",
       "tintColor": "#FF5252",
       "screenshots": [],
@@ -37,13 +37,6 @@
           "date": "2026-06-15T20:13:29Z",
           "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.8.32/ManaVortex.ipa",
           "size": 28800104,
-          "minOSVersion": "15.5"
-        },
-        {
-          "version": "0.8.32",
-          "date": "2026-05-20T07:06:13Z",
-          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.8.32/ManaVortex.ipa",
-          "size": 28735620,
           "minOSVersion": "15.5"
         }
       ]
