@@ -103,9 +103,10 @@ version rather than stacking a duplicate.
 
 ManaVortex tracks Magic: The Gathering **Commander** games at the table — life
 totals, commander damage, poison, monarch, turn timer, automatic elimination,
-a full undoable game log, and post-game statistics. It is **local-first and
-works entirely offline**: no account is required and none of your games leave
-the device unless you ask them to.
+a full undoable game log, and post-game statistics. It is **local-first**: your
+games live on your device, tracking works with no connection and no account,
+and nothing is sent anywhere unless you turn it on. (The card scanner is the
+one part that needs a connection — it looks printings up online.)
 
 Signing in with a [ManaVortex-Web](https://magic.sovra.cc) account is optional
 and adds two things: your web decks appear in the player slots, and — as a
