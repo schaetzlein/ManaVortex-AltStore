@@ -124,7 +124,7 @@ version rather than stacking a duplicate.
 ## About the app
 
 ManaVortex tracks Magic: The Gathering **Commander** games at the table — life
-totals, commander damage, poison, monarch, turn timer, automatic elimination,
+totals, commander damage, poison, turn timer, automatic elimination,
 a full undoable game log, and post-game statistics. It is **local-first**: your
 games live on your device, tracking works with no connection and no account,
 and nothing is sent anywhere unless you turn it on. (The card scanner is the
