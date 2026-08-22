@@ -15,6 +15,25 @@ This repository is the **iOS distribution channel** for ManaVortex — the AltSt
 source catalogue and the signed-on-your-device IPA builds. It holds no
 application code; it exists so AltStore has something to point at.
 
+> [!IMPORTANT]
+> **This source needs AltStore *Classic* (or SideStore) — not AltStore PAL.**
+>
+> If you are in the EU, altstore.io leads with **AltStore PAL**, because it is
+> the one that installs straight from the browser with no computer. PAL is
+> Apple's sanctioned EU marketplace, so it only installs apps that Apple has
+> **notarized**. Adding this source to PAL fails with:
+>
+> > *One or more apps in source "ManaVortex" are missing a marketplaceID. This
+> > most likely means they are not notarized, which is not supported by this
+> > version of AltStore.*
+>
+> That is expected, and not something this repository can fix — notarized
+> distribution requires an Apple Developer Program membership, EU trader
+> verification and Apple's Core Technology Fee per install. Use **AltStore
+> Classic** (installed from a computer, see [First-time setup](#first-time-setup))
+> or **[SideStore](https://sidestore.io)** instead. Both can sit alongside PAL
+> on the same phone.
+
 ---
 
 ## Add the source
@@ -36,7 +55,9 @@ Then open the ManaVortex source and tap **Install**.
 
 If AltStore is not on the phone yet, that comes first, and it needs a computer:
 
-1. **On the PC or Mac** — install [AltServer](https://altstore.io).
+1. **On the PC or Mac** — install [AltServer](https://altstore.io). This is what
+   installs AltStore **Classic**; the browser-based install offered in the EU
+   gives you PAL instead, which cannot use this source.
    On Windows it also needs **iTunes and iCloud downloaded from apple.com**, not
    the Microsoft Store versions; the Store builds are sandboxed and do not
    expose the Apple device drivers AltServer links against. This is the usual
@@ -52,6 +73,7 @@ If AltStore is not on the phone yet, that comes first, and it needs a computer:
 
 | | |
 |---|---|
+| **Installer** | AltStore **Classic** or **SideStore**. AltStore **PAL** cannot use this source — see the note at the top |
 | **iOS** | 15.5 or newer |
 | **Apple ID** | Any, including a free one — no Apple Developer Program membership |
 | **Computer** | Needed once to install AltStore, and again to refresh (see below) |
