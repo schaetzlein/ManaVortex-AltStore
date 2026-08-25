@@ -67,14 +67,21 @@ If AltStore is not on the phone yet, that comes first, and it needs a computer:
    in with an Apple ID. A free account is fine.
 4. **On the iPhone** — Settings → General → VPN & Device Management → trust the
    developer certificate. AltStore will not launch until you do.
-5. Add the source above and install ManaVortex.
+5. **iOS 16 and newer also require Developer Mode.** Try to open AltStore (or
+   any app AltServer just installed) and iOS blocks it with a prompt to enable
+   Developer Mode — that prompt is what makes the toggle appear; it is not
+   sitting in Settings beforehand. Follow it to Settings → Privacy & Security →
+   Developer Mode, turn it on, then let the phone restart and tap **Turn On**
+   on the confirmation dialog that appears after reboot. Without this step,
+   sideloaded apps fail to launch with no clearer error than that.
+6. Add the source above and install ManaVortex.
 
 ## Requirements
 
 | | |
 |---|---|
 | **Installer** | AltStore **Classic** or **SideStore**. AltStore **PAL** cannot use this source — see the note at the top |
-| **iOS** | 15.5 or newer |
+| **iOS** | 15.5 or newer (16+ also needs Developer Mode enabled — see [First-time setup](#first-time-setup)) |
 | **Apple ID** | Any, including a free one — no Apple Developer Program membership |
 | **Computer** | Needed once to install AltStore, and again to refresh (see below) |
 | **App slots** | A free Apple ID allows **3** sideloaded apps at a time; AltStore itself uses one |
