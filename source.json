@@ -24,6 +24,14 @@
       ],
       "versions": [
         {
+          "version": "0.12.3",
+          "buildVersion": "100",
+          "date": "2026-08-29T12:02:05Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.12.3/ManaVortex.ipa",
+          "size": 30005989,
+          "minOSVersion": "15.5"
+        },
+        {
           "version": "0.12.2",
           "buildVersion": "99",
           "date": "2026-08-28T16:07:02Z",
