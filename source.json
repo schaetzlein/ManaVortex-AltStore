@@ -24,6 +24,14 @@
       ],
       "versions": [
         {
+          "version": "0.13.2",
+          "buildVersion": "103",
+          "date": "2026-09-01T10:29:05Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.13.2/ManaVortex.ipa",
+          "size": 29380804,
+          "minOSVersion": "15.5"
+        },
+        {
           "version": "0.13.1",
           "buildVersion": "102",
           "date": "2026-08-31T17:13:26Z",
@@ -152,10 +160,10 @@
           "minOSVersion": "15.5"
         }
       ],
-      "version": "0.13.1",
-      "versionDate": "2026-08-31T17:13:26Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.13.1/ManaVortex.ipa",
-      "size": 29378233
+      "version": "0.13.2",
+      "versionDate": "2026-09-01T10:29:05Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.13.2/ManaVortex.ipa",
+      "size": 29380804
     }
   ],
   "news": []
