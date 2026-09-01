@@ -22,6 +22,14 @@
           "usageDescription": "Used to scan Magic: The Gathering cards for collection tracking"
         }
       ],
+      "appPermissions": {
+        "privacy": [
+          {
+            "name": "Camera",
+            "usageDescription": "Used to scan Magic: The Gathering cards for collection tracking"
+          }
+        ]
+      },
       "versions": [
         {
           "version": "0.13.2",
