@@ -143,7 +143,7 @@ separate opt-in, off by default — finished games can be published to your
 account so the website can show win rates and matchups. The camera permission is
 used only by the on-device card scanner.
 
-Available in English, German, French and Spanish.
+Available in English and German.
 
 ## Problems?
 
