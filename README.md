@@ -112,13 +112,17 @@ signed at install time with your own credentials.
 
 | File | Purpose |
 |---|---|
-| `source.json` | The AltStore source catalogue — app metadata and every published version |
+| `source.json` | The AltStore source catalogue — app metadata, and every published version with its release notes |
 | `icon.png` | App and source icon |
 | Releases | One tagged GitHub release per version, each with `ManaVortex.ipa` attached |
 
 `source.json` follows the AltStore Source API v2 format (the `apps[].versions[]`
 array), which AltStore 2.0+ and SideStore both read. Newest version first; older
-entries stay so AltStore can offer a downgrade.
+entries stay so AltStore can offer a downgrade. The newest entry is also
+mirrored onto the older flat `version` / `versionDate` / `downloadURL` / `size`
+fields, because AltStore 1.4.3 and earlier predate `versions[]` entirely and
+reject a catalogue without them with *"The data couldn't be read because it
+isn't in the correct format."*
 
 ## How a release gets here
 
@@ -127,6 +131,11 @@ in the ManaVortex build repository runs on demand and does all of it: builds the
 unsigned IPA, cuts the tagged release here with the IPA attached, and prepends
 the new entry to `source.json` — replacing any existing entry for the same
 version rather than stacking a duplicate.
+
+The version's section of the app's changelog is pulled out once and used twice:
+as the release body you are reading on this site, and as the entry's
+`localizedDescription`, which is what AltStore shows as the release notes for an
+update on the phone itself.
 
 ## About the app
 
