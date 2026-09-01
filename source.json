@@ -151,7 +151,11 @@
           "size": 28800104,
           "minOSVersion": "15.5"
         }
-      ]
+      ],
+      "version": "0.13.1",
+      "versionDate": "2026-08-31T17:13:26Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.13.1/ManaVortex.ipa",
+      "size": 29378233
     }
   ],
   "news": []
