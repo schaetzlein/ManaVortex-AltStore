@@ -32,6 +32,15 @@
       },
       "versions": [
         {
+          "version": "0.13.3",
+          "buildVersion": "104",
+          "date": "2026-09-01T11:22:03Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.13.3/ManaVortex.ipa",
+          "size": 29381838,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Fixed\n- **The scanner could put a confidently wrong card in your collection.** It read the set code and collector number off the bottom of the card and asked Scryfall for exactly that printing — and then rated its own confidence by checking that the card it got back had that set and collector number, which of course it did, because that is what it asked for. A collector number misread as another real one (142 as 42) fetched a real but completely different card, agreed with itself, and scored at the very top of the scale. The name is now compared against the card that comes back, which is the one thing the lookup never used, and a card whose name does not match is shown but never captured\n- **A high confidence figure now has to be earned.** Because the printing details were confirming the app's own question rather than the card on the table, the top of the scale meant less than it looked like. The name agreement now caps the figure: a clean read is unaffected — a single misread letter still scores as before — but a partial or doubtful read cannot reach the top no matter how neatly the rest lines up\n- **Two identical scores could show as different colours**, one amber and one orange, depending on which arithmetic produced them"
+        },
+        {
           "version": "0.13.2",
           "buildVersion": "103",
           "date": "2026-09-01T10:29:05Z",
@@ -185,10 +194,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.13.2",
-      "versionDate": "2026-09-01T10:29:05Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.13.2/ManaVortex.ipa",
-      "size": 29380804
+      "version": "0.13.3",
+      "versionDate": "2026-09-01T11:22:03Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.13.3/ManaVortex.ipa",
+      "size": 29381838
     }
   ],
   "news": []
