@@ -32,6 +32,15 @@
       },
       "versions": [
         {
+          "version": "0.15.0",
+          "buildVersion": "107",
+          "date": "2026-09-04T08:43:08Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.15.0/ManaVortex.ipa",
+          "size": 29452862,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Privacy\n- **The names you type for the other players at your table no longer leave this phone.** A finished game used to be uploaded with the name you entered for every seat, plus `profile_id` — this device's own profile id for that person, the same value in every game they play here. Neither is sent any more, and ManaVortex-Web has dropped the columns that stored them (migration 62), so the website holds nothing at all about people who do not have an account there. Your own names are untouched: they stay in the app, on this device, exactly as before\n- **A seat on the website is named only when its player says so.** If someone at your table has an account, scans their seat code and then confirms the game into their own history, their username appears on that match — and disappears again the moment they unlink it. Every other seat shows as its position at the table. On the phone, the mirrored match history follows the same rule\n- **`player_id` is per-game by design.** Each seat gets a fresh random id every game, so two games cannot be linked back to the same person. This was already true and is now written down as a rule: making it stable would undo what removing `profile_id` was for\n\n### Security\n- **The AltStore release workflow now pins its GitHub Actions to commit SHAs**, not mutable version tags — the one workflow holding a real publishing credential (`ALTSTORE_REPO_TOKEN`) is now immune to a maintainer account compromise silently retagging a dependency out from under it"
+        },
+        {
           "version": "0.14.1",
           "buildVersion": "106",
           "date": "2026-09-02T14:32:50Z",
@@ -212,10 +221,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.14.1",
-      "versionDate": "2026-09-02T14:32:50Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.14.1/ManaVortex.ipa",
-      "size": 29452299
+      "version": "0.15.0",
+      "versionDate": "2026-09-04T08:43:08Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.15.0/ManaVortex.ipa",
+      "size": 29452862
     }
   ],
   "news": []
