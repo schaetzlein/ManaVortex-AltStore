@@ -32,6 +32,15 @@
       },
       "versions": [
         {
+          "version": "0.18.0",
+          "buildVersion": "110",
+          "date": "2026-09-04T15:07:41Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.18.0/ManaVortex.ipa",
+          "size": 29824912,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **Set symbols.** Explore → Sets now leads each row with the set's own symbol instead of a crop of its most valuable card — the thing that actually identifies a set, and the same artwork the website uses. The advanced card search's set picker shows them too, so a thousand set names are scannable rather than read one at a time\n- **Trade matches, rearranged around the card.** A card a friend has from your wishlist is now one row — its art, its printing, and every friend who owns it with how many — rather than one row per friend per printing. Tap the card for its full detail and price, or narrow the whole tab to one person with the filter along the top. Your friend's profile colour comes with them, so the same person is recognisable down the list\n- **Commander portraits on the player card.** Which deck your QR names is picked from a row of commander art, the way you already pick one in the seat picker. The deck's name is still spelled out beside its portrait, with the commander under it — a deck is often named close to what commands it, so both are worth saying\n\n### Changed\n- **Scanner Quality is no longer a setting.** It was the wrong question to ask: nobody knows what 720p costs *their* phone, and a wrong answer showed up as a stuttering preview rather than as anything pointing back at the setting. The scanner now measures what a frame actually costs and picks both the capture resolution and the frame rate itself, stepping up on a fast device and down on a slow one between sessions. Whatever you had chosen seeds the first guess\n- **Selected buttons no longer carry a checkmark.** A filter chip that is on says so by being filled in; the tick was a second answer to a question already answered, and on the collection's sort chips it painted straight over the direction arrow. Gone everywhere at once — rarity, condition, bracket, binders and \"All Cards\" included\n\n### Fixed\n- **Deleting the app now really signs you out.** iOS keeps an app's Keychain entries after the app itself is gone, so a reinstall — a fresh sideload, say — opened already signed in as whoever last used the device. Nothing was ever built into the download; the app now clears what the Keychain kept when it finds itself freshly installed\n- **Player setup and the game board stay landscape on an iPad.** An iPad app that supports Split View has its orientation requests ignored outright, which is why the two screens that draw a table you sit around were rendering portrait there. (Note that iPadOS 26 removed orientation locking for everyone, so on that version both screens have to live with whatever window shape they are given.)"
+        },
+        {
           "version": "0.17.0",
           "buildVersion": "109",
           "date": "2026-09-04T13:05:58Z",
@@ -239,10 +248,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.17.0",
-      "versionDate": "2026-09-04T13:05:58Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.17.0/ManaVortex.ipa",
-      "size": 29611533
+      "version": "0.18.0",
+      "versionDate": "2026-09-04T15:07:41Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.18.0/ManaVortex.ipa",
+      "size": 29824912
     }
   ],
   "news": []
