@@ -32,6 +32,15 @@
       },
       "versions": [
         {
+          "version": "0.17.0",
+          "buildVersion": "109",
+          "date": "2026-09-04T13:05:58Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.17.0/ManaVortex.ipa",
+          "size": 29611533,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **Filters for the community deck list.** Explore → Decks now filters by commander, bracket (1–5), colours and format. Commander is the one that matters: a deck called \"Big Green Stompy\" never mentions Atraxa, so searching the deck *name* for a commander found nothing. Two of these were already being sent to the server correctly and had nothing in the app able to set them\n- **A wishlist.** Look a card up, tap \"Add to wishlist\" — the printing you have selected, foil or not — and it's there next time you're standing in a shop. Reached from Collection, and it opens with no signal: the list is kept on the device so it can be *read* anywhere, while adding and removing go straight to your account, so there is never a local copy quietly disagreeing with the website\n- **Notifications.** A bell on the home screen shows what your account is waiting on — a trade offer arrived, one you sent was accepted, a friend request, or a friend turning out to own something on your wishlist. Tapping one opens the thing it's about. Refreshed when you sign in and whenever the app comes back to the foreground, never by polling\n- **Trades you can answer from the table.** See what's on offer — what you get above what you give — read the conversation, reply, and accept, decline or withdraw. Once accepted, both sides mark it done when the cards actually change hands. Also: which of your friends has a card from your wishlist, and which of them wants one of yours\n\n  Building a trade stays on ManaVortex-Web, deliberately: picking cards and pricing a package is desk work, and the phone is for the half you do standing up. The Accept button only appears when it's genuinely your move — the server refuses to let you accept your own offer, and a button that always failed would be worse than no button\n\n### Changed\n- The card detail sheet gained an \"Add to wishlist\" action, next to the printing selector, when you're signed in\n- **Trade rows show the card art**, the way the website's do — across a table you recognise a card by its picture long before you read its name — along with the printing's condition\n- **Deck descriptions render their mana symbols.** A community deck whose description mentioned `{G}` showed you those literal braces; it now draws the symbol, like every other piece of card text in the app\n\n### Fixed\n- Opening Players & decks and immediately swiping back could throw in the background. Harmless to you, but it made the test suite flaky, which is how it was noticed"
+        },
+        {
           "version": "0.16.0",
           "buildVersion": "108",
           "date": "2026-09-04T11:19:11Z",
@@ -230,10 +239,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.16.0",
-      "versionDate": "2026-09-04T11:19:11Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.16.0/ManaVortex.ipa",
-      "size": 29527558
+      "version": "0.17.0",
+      "versionDate": "2026-09-04T13:05:58Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.17.0/ManaVortex.ipa",
+      "size": 29611533
     }
   ],
   "news": []
