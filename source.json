@@ -32,6 +32,15 @@
       },
       "versions": [
         {
+          "version": "0.16.0",
+          "buildVersion": "108",
+          "date": "2026-09-04T11:19:11Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.16.0/ManaVortex.ipa",
+          "size": 29527558,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **Advanced card search.** Explore → Cards now offers the same filters the website's advanced search does: colours with all five match modes (including \"playable in a Commander deck of these colours\"), colour count, card type, mana value, rarity, rules text (up to five phrases, matched as *all* or *any*, and searched on both faces of a double-faced card), sets, format legality, price range, mana cost, artist, power, toughness, loyalty, and keyword — plus a switch for the tokens and digital-only printings that are hidden by default. The app was sending two of the thirty-one filters the server accepts\n- **The card-name box suggests names as you type**, from the same list the website's search bar uses. The artist filter does the same, which matters more than it sounds: that filter matches the exact spelling, so half-remembering a name used to match nothing\n- **A card's detail sheet now shows what the website's does.** The name printed on a Universes Beyond reskin is the title (with the Magic name below it), the artist and power/toughness/loyalty are listed, cards Wizards flagged in 2020 carry the content warning rather than appearing unannounced, and a card with several printings gets a Normal / Foil / Etched switch that moves the prices, the chart and the links together\n- **Prices link to where the card can be bought** — dollar figures to TCGplayer, euro figures to Cardmarket, for the printing you have selected. No affiliate or referral tags are attached to any of these links\n\n### Changed\n- A set's page and the card search are now the same search, so everything above works inside a set as well\n- The detail sheet draws complete the moment it opens for a card reached from search: legality, the back face and the marketplace links already came down with the search result and were being thrown away"
+        },
+        {
           "version": "0.15.0",
           "buildVersion": "107",
           "date": "2026-09-04T08:43:08Z",
@@ -221,10 +230,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.15.0",
-      "versionDate": "2026-09-04T08:43:08Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.15.0/ManaVortex.ipa",
-      "size": 29452862
+      "version": "0.16.0",
+      "versionDate": "2026-09-04T11:19:11Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.16.0/ManaVortex.ipa",
+      "size": 29527558
     }
   ],
   "news": []
