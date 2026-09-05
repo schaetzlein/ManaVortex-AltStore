@@ -32,6 +32,15 @@
       },
       "versions": [
         {
+          "version": "0.20.0",
+          "buildVersion": "114",
+          "date": "2026-09-05T15:32:56Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.20.0/ManaVortex.ipa",
+          "size": 29876743,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **Starting a game now asks how many are playing, and where you are sitting.** Setting up used to open on four seats with the count hidden behind two invisible strips at the edges of the screen, and it never asked about seating at all — everyone sat in two rows facing, whatever the table actually looked like. It is now three questions: how many, then which arrangement, then who is in each seat\n- **Two seating arrangements at every player count, shown as a diagram of the table.** Four of you can sit two facing two, or one on each side; six can sit three facing three, or two along the long edges with one at each end; eight can sit four facing four, or two along every edge. Each option is drawn as the table seen from above, with every seat's number turned the way that player will be reading it — a picture of the arrangement rather than a name for it. A seat at a short edge turns a quarter on the board so it faces its own side, the way a duel already did\n- **The seats you fill in are where the players will actually be.** The last step lays the tiles out in the arrangement you chose, each carrying its seat number in the colour it will take on the board — so an unfilled grey seat still says which one it is, and who plays after whom\n\n### Changed\n- **Seats are numbered the way the turn passes.** Seat order runs clockwise around the table from the top-left corner, so the number on a seat is its place in the turn order. The far row used to be numbered left to right while the turn ran right to left, which meant the third player you picked was not the third to play\n- **The count and the arrangement are remembered.** Both steps open on last week's answer — still a tap each, never a silent assumption — and either can be corrected from the top of the last step without starting the setup over\n- **Start is a labelled button.** It used to be a 64px circle at 12% opacity floating in the middle of the seat grid\n- **The board's menu button sits in the middle of the table at every arrangement.** It was hand-placed off-centre for five and six players to keep it off somebody's life total; the middle of the table always falls on a seam between tiles, so the special cases were unnecessary rather than wrong"
+        },
+        {
           "version": "0.19.2",
           "buildVersion": "113",
           "date": "2026-09-05T14:29:36Z",
@@ -275,10 +284,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.19.2",
-      "versionDate": "2026-09-05T14:29:36Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.19.2/ManaVortex.ipa",
-      "size": 29865635
+      "version": "0.20.0",
+      "versionDate": "2026-09-05T15:32:56Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.20.0/ManaVortex.ipa",
+      "size": 29876743
     }
   ],
   "news": []
