@@ -32,6 +32,15 @@
       },
       "versions": [
         {
+          "version": "0.19.2",
+          "buildVersion": "113",
+          "date": "2026-09-05T14:29:36Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.19.2/ManaVortex.ipa",
+          "size": 29865635,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Changed\n- **Game length is written the same way everywhere.** History and the post-match statistics screen each had their own way of spelling a duration and disagreed about the same game — one said `0m` where the other said `0:00`, and `1h 35m` against `1:35:00`. Both now use the clock the board itself shows while you are playing, so a game reads the same from its first turn to the history list months later\n- **Settings' account rows show where they lead.** \"My player card\" and \"Trades\" open a screen but looked like plain rows; they now carry the same chevron \"Players & decks\" already had\n\n### Fixed\n- **The Settings option rows showed the active choice as the dim one.** Language, currency and font each painted the selected button *darker* than the three unselected ones beside it, so English, EUR and Poppins all looked switched off while the alternatives looked chosen\n- **White text on the light tiles.** The seat name in the player picker, and \"Add Deck\" and the deck names on a profile card, were drawn in white on the pale end of the tile palette — measured at 1.9:1 against a 4.5:1 readability floor. Every tile now picks its text colour from what it is actually painted on\n- **The Settings rows line up.** \"Players & decks\" and \"Turn timer\" sat eight pixels left of every other row on the screen\n- **Dividers no longer read as bright white rules.** They were louder than the rows they separate, which is why the notifications and trades lists looked like a spreadsheet\n- **Collection and History fill in when your account's data arrives.** Signing in from Settings and walking straight into either one showed only what this device already had: the account's cards and shared games landed in the background a moment later and sat there unseen until a pull-to-refresh\n- **The collection stops claiming your cards come from your account when none of them do.** Scan while offline, sign in later and every row is still local — the line above the list said the opposite. It now appears when there is actually something from the account to explain, or when the list is empty and that is the explanation\n- **Game History counts players the same way on every card.** A game from your account showed a bare \"5\" where a local one said \"4 players\", and that count was never translated\n- **The wishlist marks a foil with an icon rather than an emoji.** The sparkle was part of the card's name, so it rendered at whatever size the system font felt like and was read out as \"sparkles\" before every foil card by a screen reader"
+        },
+        {
           "version": "0.19.1",
           "buildVersion": "112",
           "date": "2026-09-05T13:23:44Z",
@@ -266,10 +275,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.19.1",
-      "versionDate": "2026-09-05T13:23:44Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.19.1/ManaVortex.ipa",
-      "size": 29867216
+      "version": "0.19.2",
+      "versionDate": "2026-09-05T14:29:36Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.19.2/ManaVortex.ipa",
+      "size": 29865635
     }
   ],
   "news": []
