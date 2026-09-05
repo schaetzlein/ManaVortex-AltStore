@@ -32,6 +32,15 @@
       },
       "versions": [
         {
+          "version": "0.19.1",
+          "buildVersion": "112",
+          "date": "2026-09-05T13:23:44Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.19.1/ManaVortex.ipa",
+          "size": 29867216,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Changed\n- **Commander tax is counted per commander.** A Partner deck has two commanders and each is taxed on its own — cast one twice and the other never, and only the first costs {4} more. The tile now shows a chip per commander instead of one shared counter, which over-charged one and hid the other's real cost\n\n### Fixed\n- **Commander damage fits the tile again.** At a full eight-player table where opponents play Partner decks, a player can be carrying fourteen separate damage counts. They ran off the bottom of the tile and straight through the turn timer; they now flow into a second column with everything still visible\n- **The player and deck name are no longer clipped.** The turn timer and the poison counter painted over the ends of the line between them — \"Atraxa Superfriends\" read as \"traxa Superfriends\" on a small tile. The name now keeps clear of both and shortens with an ellipsis instead\n- **The poison icon sits centred in its circle.** It carried a hand-tuned nudge that turned out to push it 1.6 px low on a real device"
+        },
+        {
           "version": "0.19.0",
           "buildVersion": "111",
           "date": "2026-09-05T11:02:51Z",
@@ -257,10 +266,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.19.0",
-      "versionDate": "2026-09-05T11:02:51Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.19.0/ManaVortex.ipa",
-      "size": 29864026
+      "version": "0.19.1",
+      "versionDate": "2026-09-05T13:23:44Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.19.1/ManaVortex.ipa",
+      "size": 29867216
     }
   ],
   "news": []
