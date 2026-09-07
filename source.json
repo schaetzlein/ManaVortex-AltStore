@@ -20,17 +20,35 @@
         {
           "type": "camera",
           "usageDescription": "Used to scan Magic: The Gathering cards for collection tracking"
+        },
+        {
+          "type": "microphone",
+          "usageDescription": "Used only to record your own turn-timer warning sound. The recording stays on this device and is never uploaded."
         }
       ],
       "appPermissions": {
+        "entitlements": [],
         "privacy": [
           {
             "name": "Camera",
             "usageDescription": "Used to scan Magic: The Gathering cards for collection tracking"
+          },
+          {
+            "name": "Microphone",
+            "usageDescription": "Used only to record your own turn-timer warning sound. The recording stays on this device and is never uploaded."
           }
         ]
       },
       "versions": [
+        {
+          "version": "0.22.0",
+          "buildVersion": "116",
+          "date": "2026-09-07T19:02:00Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.22.0/ManaVortex.ipa",
+          "size": 29704999,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **A trades button on the home screen**, beside the bell and the player card's QR, badged with what is waiting for you. All three appear only while signed in. Trades keeps its Settings entry too: the badge is how you find out, Settings is where you come looking\n- **Tap the player card's QR to blow it up.** Full-screen modules for somebody scanning from the far side of the table, and another tap puts it back\n- **Game History shows what everyone was playing.** Every seat now carries its commander (partner pairs included) under the player's name — for games recorded here and for games mirrored down from your account. Four friends who play every week produce a list of games that all look alike; the decks are what tell them apart\n- **Unlink a player from your account.** Long-press the account's player in the seat picker → *Unlink from account*. It keeps the player and the decks you named yourself, drops the ones that came down from the website, and the next refresh makes a fresh account player beside it. This is the way out if an earlier version merged your local player into your account\n\n### Fixed\n- **Recording your own turn warning produced silence.** The recording saved, the preview reported success, and nothing came out — three separate faults at once, none of which raised anything. The audio session was configured once per app launch, so after the microphone had taken it, playback went to the earpiece instead of the speaker; the player cached the recording by its file path, which never changes, so re-recording replayed the previous take from a file that had already been replaced; and the microphone was released as the preview started, which on iOS tore down the audio session under it. All three are fixed and the warning now plays back the moment you save it\n- **Signing in took over a player you had already made.** If your account name matched a player on the device — the usual case, since it is your own name — logging in silently annexed that player: it could no longer be deleted, its name was no longer really yours, and your account's decks appeared inside it. Your account gets its own player now, marked with a globe wherever it is offered, and the one you made stays yours. Both may carry the same name; the globe is what tells them apart\n- **Settings: the Player card and Trades rows sat high in their tiles**, icon, text and arrow all pushed to the top with a band of empty space underneath. They are centred\n- **Settings: Language, Currency and Font are one width.** Each row measured only its own labels, so three rows of the same control came out three different sizes, stacked one under the other\n\n### Changed\n- **The turn warning's sound is on by default, and the default tone is Beep.** It was off, on the reasoning that an app should not start making noise on your behalf — which assumed anyone would find the switch. A three-minute warning nobody hears is a warning nobody has. Beep because it is the tone that carries across a table with four people talking over it. If you have already switched the sound off, it stays off; both halves are still separate switches\n- **The player card leads with the deck.** Which deck the card claims is now above the code and in the screen's largest type — it is the one thing on that screen you can get wrong, and under the QR it was a caption nobody read. The deck strip below is bigger, and fades at whichever end has more decks in it, since the row used to run off the edge with nothing saying so\n- **Players & decks lists the players you made on this device.** Your account's own player is no longer among them: its name belongs to the website, its decks are a mirror that a refresh replaces wholesale, and it cannot be deleted — so every control on it was either inert or a trap. Your account's decks are still where you use them, in the seat picker and on the player card\n- **The AltStore listing states every permission the app asks for.** It is now read out of the app's own `Info.plist` at release time instead of being kept by hand in the distribution repository, where it had gone stale: it still said camera only, several releases after recording your own turn warning arrived"
+        },
         {
           "version": "0.21.0",
           "buildVersion": "115",
@@ -293,10 +311,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.21.0",
-      "versionDate": "2026-09-06T10:11:41Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.21.0/ManaVortex.ipa",
-      "size": 29684758
+      "version": "0.22.0",
+      "versionDate": "2026-09-07T19:02:00Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.22.0/ManaVortex.ipa",
+      "size": 29704999
     }
   ],
   "news": []
