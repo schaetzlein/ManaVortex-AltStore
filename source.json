@@ -41,6 +41,15 @@
       },
       "versions": [
         {
+          "version": "0.22.1",
+          "buildVersion": "117",
+          "date": "2026-09-09T19:45:41Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.22.1/ManaVortex.ipa",
+          "size": 29700283,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Fixed\n- **The scanner's guide frame was enormous on an iPad.** It was 92 % of the screen's width whatever the screen was — an outline nearly the height of the iPad's screen that no card could be held against, and the frame's height was clipped rather than the whole frame scaled, so it was not even card-shaped. It is now capped at a real card's size, keeps its proportions on any screen, and the scan HUD under it no longer stretches from edge to edge\n- **Tapping a card in a scan session did nothing.** It opens the card's detail sheet, the same as in the collection — which is how you check the scanner picked the right printing before saving the session\n\n### Changed\n- **Switching to another printing is its own button** on the card's row in a scan session, beside edit and remove. It was folded inside the edit sheet behind a disclosure, two taps deep, next to the one other thing that sheet offers; correcting the print run is the reason you open a scanned card at all. The swipe still works"
+        },
+        {
           "version": "0.22.0",
           "buildVersion": "116",
           "date": "2026-09-07T19:02:00Z",
@@ -311,10 +320,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.22.0",
-      "versionDate": "2026-09-07T19:02:00Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.22.0/ManaVortex.ipa",
-      "size": 29704999
+      "version": "0.22.1",
+      "versionDate": "2026-09-09T19:45:41Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.22.1/ManaVortex.ipa",
+      "size": 29700283
     }
   ],
   "news": []
