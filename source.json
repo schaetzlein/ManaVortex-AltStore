@@ -41,6 +41,15 @@
       },
       "versions": [
         {
+          "version": "0.23.1",
+          "buildVersion": "119",
+          "date": "2026-09-09T21:13:27Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.23.1/ManaVortex.ipa",
+          "size": 29728021,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **The manual card search suggests names as you type**, from the second character on — the same as adding a card to a deck on the website. Explore's card search and this one are now literally the same field\n\n### Fixed\n- **An older card could be mistaken for a completely different one.** On a German Lorwyn card the last line of rules text sat in the strip the scanner reads set codes from, and the word \"und\" — read in capitals — is a real set code, so the scan locked onto a card from 2020 and stayed there. Three things now stand in the way: a set code has to be *printed* in capitals to count as one, no set code is accepted at all from a card older than 2015 (they did not print one — the set was a symbol, not text), and when the name still disagrees the scanner asks again without the set and number and takes whichever card the name actually matches\n- **Searching for a card by part of its name works.** Adding a card by hand in a scan session only ever looked for the *whole* name, so typing \"Hans\" reported that no such card exists. A fragment now finds every card whose name contains it\n- **The search button in that sheet was an empty white circle.** It was drawing a white icon on a white fill\n- **Settings: \"Deutsch\" and \"Poppins\" no longer wrap onto a second line.** Making the three option rows share one width left four pixels unaccounted for — the exact amount the buttons pad themselves by — so each row was very slightly too narrow for its own longest label. The font names are also measured in the font they name, which is how they are drawn\n- **The scanner shows the detected card again.** In 0.23.0 the outline drawn around the card, and the bands showing where the name and the printing strip are being read from, stopped appearing — the card was still being detected on every frame and the reading still followed its edges, but the viewfinder no longer said so. Moving card lookups off the camera path had taken the repaint with it\n\n### Removed\n- **Scan-trace recording.** Shipped in 0.23.0 and taken out again: reaching the recorded files on an iPhone needs a specially built app sideloaded for the purpose, which is more ceremony than the thing was worth. The scanner's reading stages stay covered by their own unit tests"
+        },
+        {
           "version": "0.23.0",
           "buildVersion": "118",
           "date": "2026-09-09T20:31:33Z",
@@ -329,10 +338,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.23.0",
-      "versionDate": "2026-09-09T20:31:33Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.23.0/ManaVortex.ipa",
-      "size": 29729487
+      "version": "0.23.1",
+      "versionDate": "2026-09-09T21:13:27Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.23.1/ManaVortex.ipa",
+      "size": 29728021
     }
   ],
   "news": []
